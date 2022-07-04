@@ -1,0 +1,230 @@
+* {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background: #fffbfb;
+}
+
+
+.wrapper {
+    width: 1300px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: bold;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.telkom {
+    float: left;
+}
+
+nav {
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: maroon;
+}
+
+select {
+    color: black;
+}
+
+select option {
+    color: black;
+    background-color: rgb(252, 252, 173);
+    border-radius: 20px;
+}
+
+.table {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    background-color: beige;
+    border-radius: 5px;
+    width: auto;
+}
+
+.table input[type=text],
+select {
+    border: 2px solid rgb(202, 16, 16);
+    width: 100%;
+    padding: 15px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.table input[type=tel] {
+    border: 2px solid rgb(202, 16, 16);
+    width: 100%;
+    padding: 15px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.table input[type=email] {
+    border: 2px solid rgb(202, 16, 16);
+    width: 100%;
+    padding: 15px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.table input[type=number] {
+    border: 2px solid rgb(202, 16, 16);
+    width: 100%;
+    padding: 15px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.table input[type=file] {
+    border: 2px solid rgb(202, 16, 16);
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    display: inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fd1c1c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.table input {
+    color: rgb(43, 43, 22);
+    background-color: rgb(248, 248, 248);
+    margin: 100px
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 500ms ease-in-out;
+    border-radius: 6px;
+    z-index: 100;
+    background-color: rgba(183, 34, 34, 0.952);
+    width: 500px;
+    max-width: 90%;
+
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.modal-header .title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: thin;
+    color: black;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.504);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-body {
+    width: 500px;
+    height: 620px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgb(251, 231, 207);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.modal-body input {
+    width: 450px;
+    height: 20px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 2px;
+    padding-left: 15px;
+    color: #091517;
+}
+
+.modal-body h5 {
+    color: #000000;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tap {
+    background-color: #dbdada;
+    width: 90%;
+    height: 20px;
+    border-radius: 10px;
+    ;
+    padding: 10px 20px 30px 20px;
+    font-size: large;
+    margin: 10px 25px;
+    color: black;
+    border: 3px;
+
+
+}
+
+.tap:hover {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
